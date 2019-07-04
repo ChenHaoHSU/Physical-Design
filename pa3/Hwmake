@@ -1,0 +1,29 @@
+NAME=b03505028-p3
+TNAME=$NAME.tar
+
+cd src/
+make -j8
+cd ../
+
+rm -f $TNAME
+rm -r -f $NAME
+rm src/*.lg.plt
+rm src/*.lg.pl
+
+mkdir $NAME
+
+cp -r src/ $NAME/src/
+rm -f $NAME/src/CMakeCache.txt
+rm -f $NAME/src/cmake_install.cmake
+rm -f $NAME/src/Makefile
+rm -f $NAME/src/legalizer
+
+cp src/legalizer $NAME/
+cp readme.txt $NAME/
+cp report.pdf $NAME/
+cp report.doc $NAME/
+
+tar zcvf $TNAME $NAME
+
+#rm -r -f $NAME
+
