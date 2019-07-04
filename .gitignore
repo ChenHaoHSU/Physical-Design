@@ -4,14 +4,16 @@ CMakeCache.txt
 cmake_install.cmake
 *Makefile
 *CMakeFiles/
-legalizer
 *.plt
 *.pl
 *.make
 *.a
 *.internal
 
-pa1/fm
-pa1/testGen
-pa2/Floorplan.exe
+legalizer
+fm
+testGen
+Floorplan.exe
 !pa2/Makefile
+
+

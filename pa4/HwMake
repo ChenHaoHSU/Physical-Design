@@ -1,0 +1,24 @@
+NAME=b03505028-p4
+TNAME=$NAME.tar
+SRC=$NAME/src/
+
+rm -f $TNAME
+rm -r -f $NAME
+
+mkdir $NAME
+mkdir $SRC
+
+make clean
+make
+
+cp *.cpp $SRC
+cp *.h $SRC
+cp Makefile $SRC
+cp router $NAME
+cp readme.txt $NAME
+cp report.doc $NAME
+cp report.pdf $NAME
+
+tar zcvf $TNAME $NAME
+
+#rm -r -f $NAME
