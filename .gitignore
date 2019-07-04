@@ -2,10 +2,16 @@
 pa1/fm
 pa1/testGen
 pa2/Floorplan.exe
-pa3/src/CMakeCache.txt
-pa3/src/cmake_install.cmake
-pa3/src/Makefile
-pa3/src/CMakeFiles/
+pa3/*/CMakeCache.txt
+pa3/*/cmake_install.cmake
+pa3/*/Makefile
+pa3/*/CMakeFiles/*
+pa3/*/legalizer
 *.plt
 *.pl
+*.make
+*.a
+*.internal
+
+
 
