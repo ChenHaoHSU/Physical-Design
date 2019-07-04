@@ -10,10 +10,11 @@ cmake_install.cmake
 *.a
 *.internal
 
-legalizer
-fm
 testGen
+fm
 Floorplan.exe
+legalizer
+router
 !pa2/Makefile
 
 
