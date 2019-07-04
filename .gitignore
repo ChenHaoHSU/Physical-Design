@@ -1,17 +1,17 @@
 *.o
-pa1/fm
-pa1/testGen
-pa2/Floorplan.exe
-pa3/*/CMakeCache.txt
-pa3/*/cmake_install.cmake
-pa3/*/Makefile
-pa3/*/CMakeFiles/*
-pa3/*/legalizer
+
+CMakeCache.txt
+cmake_install.cmake
+*Makefile
+*CMakeFiles/
+legalizer
 *.plt
 *.pl
 *.make
 *.a
 *.internal
 
-
-
+pa1/fm
+pa1/testGen
+pa2/Floorplan.exe
+!pa2/Makefile
